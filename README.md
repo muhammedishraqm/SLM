@@ -9,6 +9,8 @@ The primary performance metrics evaluated are Time To First Token (TTFT) and ove
 | Model          | Parameters | TTFT (s) | TPS     | Notes / Accuracy |
 |----------------|------------|----------|---------|------------------|
 | `smollm2:135m` | 135M       | 0.0262   | 160.34  | Severe Hallucinations |
+| `qwen2.5:0.5b` | 500M       | 0.0908   | 143.12  | Accurate factual recall (correct population data) |
+| `gemma3:270m`  | 270M       | 0.0696   | 134.12  | Incomplete (returns city name instead of population) |
 
 ## Conclusion
 The initial benchmark reveals a significant trade-off between raw speed and factual recall with edge-level micro-models. While the `smollm2:135m` model achieves massive generation speeds (>150 TPS) and near-instant response times, it suffers from severe factual hallucinations. For instance, when tasked with recalling factual data (e.g., the population of the capital of Japan), it generated completely fabricated numbers (claiming well over 1.9 trillion). 

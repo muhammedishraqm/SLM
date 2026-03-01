@@ -5,3 +5,8 @@ project_folder/
 ├── report.md           # Your analysis + tables (convert to PDF)
 ├── models/             # Notes on which models you tested
 └── README.md           # How to run it
+
+Models:
+gemma3:270m	
+qwen2.5:0.5b
+smollm2:135m
