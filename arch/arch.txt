@@ -1,0 +1,7 @@
+project_folder/
+├── app.py              # Main script: runs tests, measures speed, validates JSON
+├── test_prompts.json   # 5-10 fixed prompts for fair testing
+├── results.csv         # Auto-saved: model speeds, JSON success rates
+├── report.md           # Your analysis + tables (convert to PDF)
+├── models/             # Notes on which models you tested
+└── README.md           # How to run it
